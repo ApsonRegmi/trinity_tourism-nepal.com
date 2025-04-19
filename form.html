@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Feedback - Home</title>
+</head>
+
+<body>
+    <h1 class="heading1">Feedback</h1>
+
+    <p class="heading2"> Please take a moment to share your thoughts and suggestions to help us
+        improve your experience.</p>
+
+    <a href="index.html" class="home-button"><img src="homelogo.png" alt="home" width="50px" ></a>
+
+    <form action="/submit-feedback" method="post" class="form-info">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Your Full Name" required><br>
+
+        <label for="email">Email(optional):</label><br>
+        <input type="email" id="email" name="email" placeholder="example@gmail.com"><br>
+
+        <label for="phone">Contact:</label><br>
+        <input type="tel" id="phone" name="phone" placeholder="+977 _ _ _ _ _ _ _ _ _ _" required><br>
+
+        <label for="country">Background Color Suggestion:</label><br>
+        <input type="color" id="color" name="color" required><br>
+
+        <label for="other">Additional Preferences(optional):</label><br>
+        <input type="file" name="file-more"><br>
+
+        <label for="comments">Comments(optional):</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Your Feedback"></textarea><br>
+
+        <label for="rating">Rating:</label><br>
+        <input type="number" min="1" max="10" placeholder="1-10" required>
+        <select id="rating" name="rating" required>
+            <option value="">Rate Our Website</option>
+            <option value="excellent">Excellent</option>
+            <option value="good">Good</option>
+            <option value="average">Average</option>
+            <option value="poor">Poor</option>
+        </select><br>
+
+        <input type="reset" value="Reset"><br>
+        <input type="submit" value="Submit Feedback">
+        
+    </form>
+
+    <style>
+        body {
+
+            background-image: url('download.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        @keyframes heading1-left {
+            from {
+                opacity: 0;
+                transform: translateX(-100%);
+
+            }
+
+            to {
+                opacity: 1;
+                transform: translate(-50%, -50%);
+            }
+
+        }
+
+        @keyframes heading3-right {
+            from {
+                opacity: 0;
+                transform: translateX(+100%);
+
+            }
+
+            to {
+                opacity: 1;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        .home-button {
+
+            object-fit: contain;
+            position: absolute;
+            top: 90%;
+            left: 95%;
+            width: 25px;
+            height: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+
+        .home-button:hover {
+            box-shadow: 0px 8px px rgba(0, 0, 0, 0.5);
+
+        }
+
+        .heading1 {
+            position: absolute;
+            top: 1%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 4rem;
+            color: white;
+            letter-spacing: 4px;
+            text-align: center;
+            padding: 10px 40px;
+            backdrop-filter: blur(10px);
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            animation: heading1-left 0.5s ease-out forwards;
+        }
+
+        .heading2 {
+            position: relative;
+            top: 15%;
+            left: 50%;
+            align-items: center;
+            animation: heading1-left 0.5s ease-out forwards;
+        }
+
+        .form-info {
+
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 1.5rem;
+            color: white;
+            letter-spacing: 4px;
+            text-align: center;
+            padding: 5px 40px;
+            backdrop-filter: blur(10px);
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            animation: heading3-right 0.5s ease-out forwards;
+
+        }
+    </style>
+
+</body>
+
+</html>

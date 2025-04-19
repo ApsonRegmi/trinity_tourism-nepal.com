@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Province#2 - Map</title>
+</head>
+
+<body>
+  <h1>Explore Beautiful Places</h1>
+
+  <div class="top-return">
+    <a href="explore.html" class="return-link">
+      <img src="return.png" alt="Return" class="return-icon" />
+      <span class="return-text">Get back to explore</span>
+    </a>
+  </div>
+
+  <div class="province">
+
+    <div class="place" style="background-image: url('pro2img1.webp');">
+      <div class="info">
+        <div class="title">Janaki Temple</div>
+        <div class="description">
+          A vibrant religious and cultural city, home to the grand Janaki Temple dedicated to Goddess Sita.
+        </div>
+      </div>
+    </div>
+
+
+    <div class="place" style="background-image: url('pro2img2.jpg');">
+      <div class="info">
+        <div class="title">Gadhimai Temple</div>
+        <div class="description">
+          Famous for the Gadhimai Festival, one of the biggest religious gatherings in Nepal dedicated to Goddess
+          Gadhimai.
+        </div>
+      </div>
+    </div>
+
+
+    <div class="place" style="background-image: url('pro2img3.jpg');">
+      <div class="info">
+        <div class="title">Parsa National Park</div>
+        <div class="description">
+          Parsa National Park has been gazetted as a wildlife reserve to preserve the habitat for wild Asian elephant
+          and a variety of other fauna.
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 40px 20px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom, #000000, #ffffff);
+      color: #fff;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #ffffff;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+      animation: h1appear 0.5s ease-in forwards;
+    }
+
+    .province {
+      display: flex;
+      gap: 30px;
+      justify-content: center;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: 0 auto;
+      animation: provincein 0.5s ease-in forwards;
+    }
+
+    .place {
+      position: relative;
+      width: 350px;
+      height: 13cm;
+      border-radius: 20px;
+      overflow: hidden;
+      cursor: pointer;
+      background-size: cover;
+      background-position: center;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+      transition: transform 0.3s ease;
+    }
+
+    .place:hover {
+      transform: scale(1.02);
+    }
+
+    .info {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.75);
+      color: #fff;
+      padding: 30px;
+      transform: translateY(100%);
+      transition: transform 0.5s ease;
+    }
+
+    .place:hover .info {
+      transform: translateY(0);
+    }
+
+    .title {
+      font-size: 1.6rem;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    .description {
+      font-size: 1rem;
+      line-height: 1.5;
+      color: #ddd;
+    }
+
+    @keyframes provincein {
+      from {
+        transform: translateY(100%);
+      }
+
+      to {
+        transform: translateY(0%);
+      }
+
+    }
+
+    @keyframes h1appear {
+      from {
+        opacity: 0%;
+      }
+
+      to {
+        opacity: 100%;
+      }
+
+    }
+
+    .top-return {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 1000;
+    }
+
+    .return-link {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      background-color: rgba(255, 215, 0, 0.15);
+      /* subtle gold background */
+      padding: 10px 15px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(255, 215, 0, 0.2);
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .return-link:hover {
+      background-color: rgba(255, 215, 0, 0.3);
+      transform: translateY(-2px);
+    }
+
+    .return-icon {
+      width: 24px;
+      height: 24px;
+      filter: brightness(0) saturate(100%) invert(83%) sepia(43%) saturate(500%) hue-rotate(1deg) brightness(102%) contrast(95%);
+    }
+
+    .return-text {
+      color: gold;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+  </style>
+</body>
+
+</html>

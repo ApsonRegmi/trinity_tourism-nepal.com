@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Home - Project Work</title>
+
+</head>
+
+<body>
+  <header>
+
+    <nav>
+      <br>
+      <a href="index.html" class="nav-line">Home</a>
+      <a href="contact.html" class="nav-line">Contact</a>
+      <a href="about.html" class="nav-line">About Us</a>
+      <a href="website.html" class="nav-line">How this Works?</a>
+    </nav>
+
+    <a href="explore.html" class="explore-button">EXPLORE &rarr;</a>
+
+    <div class="form-setup">
+      <img src="feedback.gif" alt="feedback" class="feedimg">
+      <a href="form.html"><button class="go-button">GO &rarr;</button> </a>
+    </div>
+
+
+    <h1 class="heading1">
+      PROJECT <br> WORK
+    </h1>
+
+    <h2 class="heading2">
+      EXPLORE TOURISM IN NEPAL
+    </h2>
+
+  </header>
+
+  <style>
+    body {
+      background-image: url('download.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    nav {
+
+      display: flex;
+      justify-content: space-around;
+      transform: translateX(-7%);
+
+    }
+
+    .nav-line {
+      text-decoration: none;
+      position: relative;
+      ;
+      font-family: 'Poppins', sans-serif;
+      color: #FF4500;
+      font-size: 25px;
+      letter-spacing: 0.5px;
+      margin: 0 15px;
+
+    }
+
+    .nav-line::after {
+      content: "";
+      display: block;
+      background-color: #FF4500;
+      height: 3px;
+      width: 0;
+      transition: 0.3s;
+    }
+
+
+    .nav-line:hover {
+      color: #ffffff;
+    }
+
+    .nav-line:hover:after {
+      width: 100%;
+    }
+
+    @keyframes heading1-left {
+      from {
+        opacity: 0;
+        transform: translateX(-100%);
+
+      }
+
+      to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+      }
+
+    }
+
+
+
+    @keyframes heading3-right {
+      from {
+        opacity: 0;
+        transform: translateX(+100%);
+
+      }
+
+      to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    .heading1 {
+      position: absolute;
+      top: 45%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 4rem;
+      color: white;
+      letter-spacing: 4px;
+      text-align: center;
+      padding: 30px 60px;
+      backdrop-filter: blur(10px);
+      background-color: rgba(255, 255, 255, 0.1);
+      border: 2px solid rgba(255, 255, 255, 0.3);
+      border-radius: 16px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+      animation: heading1-left 0.5s ease-out forwards;
+    }
+
+    .heading2 {
+
+      position: absolute;
+      font-size: 3rem;
+      top: 7%;
+      left: 50%;
+      transform: translateX(-50%);
+      color: rgb(255, 94, 0);
+      text-shadow: 0 0 10px rgba(255, 94, 0, 0.5);
+    }
+
+    .explore-button {
+      text-decoration: none;
+      position: absolute;
+      top: 80%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 2rem;
+      color: white;
+      letter-spacing: 4px;
+      text-align: center;
+      padding: 30px 60px;
+      backdrop-filter: blur(10px);
+      background-color: rgba(255, 255, 255, 0.1);
+      border: 2px solid rgba(255, 255, 255, 0.3);
+      border-radius: 16px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+      animation: heading3-right 0.5s ease-out forwards;
+      transition: 0.4s ease-in-out;
+    }
+
+    .explore-button:hover {
+      box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+
+    }
+
+    .go-button {
+      position: absolute;
+      opacity: 0;
+      background-color: white;
+      border: 2px solid #FF4500;
+      box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+      top: 100%;
+      left: 300%;
+      color: #FF4500;
+      font-size: 2rem;
+      border-radius: 8px;
+
+    }
+
+    .form-setup {
+      object-fit: contain;
+      position: absolute;
+      top: 80%;
+      left: 84%;
+      width: 25px;
+      height: 15px;
+    }
+
+    .form-setup:hover .feedimg {
+      opacity: 0;
+      transition: 0.3s;
+    }
+
+
+
+    .form-setup:hover .go-button {
+      cursor: pointer;
+      opacity: 1;
+
+    }
+
+    .go-button:hover {
+
+      color: #AE8A44;
+
+    }
+  </style>
+</body>
+
+</html>
